@@ -1,0 +1,12 @@
+.venv
+dataset/floorplan_dataset
+dataset.rar
+**/__pycache__/**
+rplan_json
+processed_rplan
+ckpts
+outputs/
+outputs_1000_10000/
+explore_data.ipynb
+tb_logs/
+lightning_logs/

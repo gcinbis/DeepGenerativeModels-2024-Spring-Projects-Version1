@@ -1,0 +1,15 @@
+in order to install mpi4py I had to: 
+sudo apt-get install libopenmpi-dev
+
+
+create list.txt under the *.json dataset folder in order to load the dataset
+
+trying to parse all the files throws error. Therefore using only first 1000 for now
+
+
+ROOM_CLASS = {"living_room": 1, "kitchen": 2, "bedroom": 3, "bathroom": 4, "balcony": 5, "entrance": 6, "dining room": 7, "study room": 8,
+              "storage": 10 , "front door": 15, "unknown": 16, "interior_door": 17}
+
+
+in order to install pygraphviz
+sudo apt-get install python-dev graphviz libgraphviz-dev pkg-config

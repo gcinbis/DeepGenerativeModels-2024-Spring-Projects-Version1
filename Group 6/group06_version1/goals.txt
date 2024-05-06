@@ -1,0 +1,10 @@
+Title: KD-DLGAN: Data Limited Image Generation via Knowledge Distillation
+
+Url: https://openaccess.thecvf.com/content/CVPR2023/papers/Cui_KD-DLGAN_Data_Limited_Image_Generation_via_Knowledge_Distillation_CVPR_2023_paper.pdf
+
+We aim to reproduce the scores on table-4 as quantitative results and figures4 as the qualitative result.
+
+—— version 1 submission ——
+- We didn't change our goals, despite being able fully achieve them.
+- We couldn't achieve the goals yet. In the DA paper, the recommended number of epochs was 3000. However, due to time concerns in training KD-DLGAN, we could only train for 160 epochs. Therefore, neither model matched our goals in terms of FID scores.
+- Our initial plan is to train the models with more epochs as recommended. If our results still do not match those reported in the paper, we may need to review and potentially modify our implementation of KD-DLGAN distillation method.

@@ -1,0 +1,27 @@
+Group 7
+HouseDiffusion: Vector Floorplan Generation via a Diffusion Model with Discrete and Continuous Denoising
+https://arxiv.org/pdf/2211.13287.pdf
+Qualitative Result: https://github.com/aminshabani/house_diffusion/blob/main/figs/teaser.png
+Quantative Result: FID is used for quantative evaluation. we are targeting to reproduce similar results to last row at Table 1.
+
+—— version 1 submission —— 
+
+The goals above are not changed. However, due to lack of time we were not able to train our model on a large portion of the datset. We were only able to train with 10_000 data points for 100_000 steps. Which we need to further investigate on selection of these values. 
+We were able to get FID score 200 which the paper were able to obtain ~10. Other than that the qualitative results are not satisfactory due to sub-optimal training. You can see it on the gifs under static/ folder and jupyer notebook main.ipynb
+
+Plan
+
+We are planning to train the model on a much bigger portion of the data and do various experiments in order to get the best results. We are planning to set the hyperparameters that are mentioned in the paper as well.
+
+Disclaimer
+
+You will see two versions of the project. Stable and latest. We wanted to submit a complete project(training, inference, visualization) therefore we followed the approach:
+
+Download the original repository and identify missing pieces. Replace existing codebase with our own implementation.
+
+This approach was not the best option because while we are trying to fix bugs/problems in the original repository we have lost a lot of time. 
+In the stable version we removed a certain amount of the existing repo(~%40) and written our versions of  training, inference, notebook codes. 
+Then we started to develop the models themselves. At this step we have encountered lots of problems(dimensionality etc.) As of this submission you can see the latest version of the repository is in _latest folder.
+
+Before the second submission we are planning to put effort on replacing the whole codebase(models, training loops, dataset loaders) with our implementations.
+
